@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Prochef.Infrastructure.EF
 {
-    public class ProchefDbContextSeed
+    public static class ProchefDbContextSeed
     {
         public static void Seed(ProchefDbContext context, int retry = 0)
         {

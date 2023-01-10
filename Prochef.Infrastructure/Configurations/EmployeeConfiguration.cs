@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Prochef.Infrastructure.Entities;
+using Prochef.Core.Entities;
 
 namespace Prochef.Infrastructure.Configurations
 {
@@ -14,9 +14,9 @@ namespace Prochef.Infrastructure.Configurations
                 builder.HasIndex(b => b.Phone).IsUnique();
                 builder.HasQueryFilter(b => !b.IsDeleted);
 
-                builder.HasOne(p => p.Position)
+                builder.HasOne(p => p.Role)
                        .WithMany(p => p.Employees)
-                       .HasForeignKey(p => p.PositionId)
+                       .HasForeignKey(p => p.RoleId)
                        .OnDelete(DeleteBehavior.Restrict);
 
                 builder.HasOne(p => p.Restaurant)

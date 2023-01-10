@@ -3,8 +3,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using Prochef.Infrastructure.EF;
-using Prochef.Infrastructure.Entities.Base;
-using Prochef.Infrastructure.Interfaces;
+using Prochef.Core.Entities.Base;
+using Prochef.Core.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

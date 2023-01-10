@@ -1,7 +1,6 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Prochef.Infrastructure.Entities;
+using Prochef.Core.Entities;
 
 namespace Prochef.Infrastructure.Configurations
 {
@@ -21,6 +20,15 @@ namespace Prochef.Infrastructure.Configurations
                        .WithMany(e => e.VendorCategories)
                        .HasForeignKey(e => e.VendorId)
                        .OnDelete(DeleteBehavior.Restrict);
+
+                builder.HasData(
+                    new VendorCategory { CategoryId = 1, VendorId = 1 },
+                    new VendorCategory { CategoryId = 2, VendorId = 2 },
+                    new VendorCategory { CategoryId = 3, VendorId = 3 },
+                    new VendorCategory { CategoryId = 4, VendorId = 4 },
+                    new VendorCategory { CategoryId = 5, VendorId = 5 },
+                    new VendorCategory { CategoryId = 6, VendorId = 6 },
+                    new VendorCategory { CategoryId = 7, VendorId = 7 });
             }
         }
     }

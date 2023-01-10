@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Prochef.Infrastructure.Entities;
+using Prochef.Core.Entities;
 
 namespace Prochef.Infrastructure.Configurations
 {
@@ -10,6 +10,24 @@ namespace Prochef.Infrastructure.Configurations
         {
             builder.HasIndex(b => b.Title).IsUnique();
             builder.HasQueryFilter(b => !b.IsDeleted);
+
+            builder.HasData(
+                new Menu
+                {
+                    Id = 1,
+                    Title = "Macdonalds Menu"
+                },
+                new Menu
+                {
+                    Id = 2,
+                    Title = "KFC Menu"
+                },
+                new Menu
+                {
+                    Id = 3,
+                    Title = "BurgerKing Menu"
+                }
+            );
         }
     }
 }

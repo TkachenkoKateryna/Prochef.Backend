@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prochef.WebApi", "Prochef.WebApi\Prochef.WebApi.csproj", "{89CAC739-0F6C-4FD9-BC25-567298D2DF58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prochef.WebApi", "Prochef.WebApi\Prochef.WebApi.csproj", "{89CAC739-0F6C-4FD9-BC25-567298D2DF58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prochef.Infrastructure", "Prochef.Infrastructure\Prochef.Infrastructure.csproj", "{DE6B317D-CFE1-4673-915C-9EAEFCF80C7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prochef.Infrastructure", "Prochef.Infrastructure\Prochef.Infrastructure.csproj", "{DE6B317D-CFE1-4673-915C-9EAEFCF80C7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prochef.Application", "Prochef.Application\Prochef.Application.csproj", "{FBF34747-489F-4242-BA34-0E93E69F334A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prochef.Core", "Prochef.Core\Prochef.Core.csproj", "{14960519-80DC-4947-9775-2A12EE5E33BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DE6B317D-CFE1-4673-915C-9EAEFCF80C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE6B317D-CFE1-4673-915C-9EAEFCF80C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE6B317D-CFE1-4673-915C-9EAEFCF80C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBF34747-489F-4242-BA34-0E93E69F334A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBF34747-489F-4242-BA34-0E93E69F334A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBF34747-489F-4242-BA34-0E93E69F334A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBF34747-489F-4242-BA34-0E93E69F334A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14960519-80DC-4947-9775-2A12EE5E33BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14960519-80DC-4947-9775-2A12EE5E33BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14960519-80DC-4947-9775-2A12EE5E33BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14960519-80DC-4947-9775-2A12EE5E33BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
